@@ -1,9 +1,13 @@
 import pandas as pd
+import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+
 
 # Load datasets
 qwerty_data = pd.read_csv('qwerty_dataset.csv')
@@ -23,6 +27,8 @@ y = data['label']
 # Standardize the features
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
+
+joblib.dump(scaler, 'scaler.pkl')
 
 # Split data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
