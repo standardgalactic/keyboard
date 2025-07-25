@@ -4,6 +4,8 @@ This project employs a neural network to determine whether a given word is bette
 
 ## What It Does
 
+![](flutter-01.jpg)
+
 You input a word like `hello`, and the model predicts whether it's more "natural" to type on a QWERTY or Dvorak keyboard, based on:
 
 - **Home row usage**
@@ -50,6 +52,8 @@ These features were calculated separately for QWERTY and Dvorak layouts to gener
 
 ## 🛠 How to Use
 
+![](flutter-02.jpg)
+
 1. Clone the repo
 2. Ensure you have Python 3 and install dependencies:
    ```bash
@@ -75,3 +79,20 @@ Output:
 'function' → QWERTY (0.00)
 'zoo' → QWERTY (0.30)
 ```
+
+
+# Broader Fan Language
+
+The Telegraph-courier (Kenosha, Wis.), November 22, 1923
+https://www.loc.gov/resource/sn85040310/1923-11-22/ed-1/?sp=8&st=image&r=-0.343,-0.142,1,1.447,0
+
+And:
+The Western Sentinel (Winston-Salem,) Oct. 24, 1922, edition 1 / Page 13
+https://newspapers.digitalnc.org/lccn/sn85042327/1922-10-24/ed-1/seq-13/
+
+See also:
+https://www.sothebys.com/en/articles/the-secret-language-of-fans#:~:text=Nowadays%2C%20it%20is%20widely%20believed,suggestion%20to%20just%20be%20friends.
+
+https://www.whalingmuseum.org/online_exhibits/fans/language.html#:~:text=Letting%20the%20fan%20rest%20on,%22No.%22
+
+
